@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook — Jovent Menswear</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Explorer (dense index) view */
+        #lookSection.explorer .catlog-grid { grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--border-soft); }
+        #lookSection.explorer .look-card { border-radius: 0; border: none; border-right: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); aspect-ratio: 1; }
+        #lookSection.explorer .look-card img { filter: brightness(.5); }
+        #lookSection.explorer .look-body { text-align: center; }
+        #lookSection.explorer .look-shade { background: linear-gradient(0deg, rgba(0,0,0,.85) 0%, transparent 60%); }
+        @media (max-width: 1024px) { #lookSection.explorer .catlog-grid { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body>
+
+<div class="announce">Complimentary delivery on orders over ৳5,000 &nbsp;·&nbsp; Cash on Delivery across Bangladesh</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+            <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Shop</a>
+            <a href="catalogues.html">Lookbook</a>
+            <a href="videos.html">Films</a>
+            <a href="brands.html">Labels</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="hicon" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </button>
+            <a class="hicon" href="account.html?tab=wishlist" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.5 8 2.5 4.5 6 4.5c2 0 3.5 1.2 4.5 2.6 1-1.4 2.5-2.6 4.5-2.6 3.5 0 5.5 3.5 4 7.2C19.5 16.3 12 21 12 21z"/></svg>
+                <span class="cart-count" id="wishCount" style="display:none">0</span>
+            </a>
+            <a class="cart-link" href="cart.html" aria-label="Shopping bag">
+                <svg viewBox="0 0 24 24"><path d="M6 8h15l-1.5 12.5a1 1 0 0 1-1 .5H8.5a1 1 0 0 1-1-.5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                <span>Bag</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+                <a class="account-link" href="login.html" id="accountLink" aria-label="Account">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></svg>
+                    <span id="accountLabel">Login</span>
+                </a>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="wrap reveal in">
+        <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <b>Lookbook</b></div>
+        <h1>The <em>Lookbook</em></h1>
+        <p>Editorial stories from the house — how we wear it, season after season.</p>
+    </div>
+</section>
+
+<section id="lookSection">
+    <div class="wrap">
+        <div class="toolbar reveal in" style="margin-bottom:34px">
+            <span class="tool-count">4 Editorial Stories</span>
+            <button class="pill" id="explorerBtn">Explorer View</button>
+        </div>
+        <div class="catlog-grid">
+            <a class="look-card reveal" href="collection.html?cat=formal">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop" alt="The Wedding Edit" loading="lazy">
+                <span class="look-num">01</span>
+                <div class="look-shade"></div>
+                <div class="look-body"><span class="kicker">Suits · Shirts</span><h3>The Wedding Edit</h3><p>Black tie to holud — 24 looks</p></div>
+            </a>
+            <a class="look-card reveal reveal-d1" href="collection.html?cat=casual">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=800&auto=format&fit=crop" alt="Autumn Winter" loading="lazy">
+                <span class="look-num">02</span>
+                <div class="look-shade"></div>
+                <div class="look-body"><span class="kicker">Jackets · Denim</span><h3>Autumn / Winter ’26</h3><p>Layering, mastered — 18 looks</p></div>
+            </a>
+            <a class="look-card reveal reveal-d2" href="collection.html?cat=formal">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Office Essentials" loading="lazy">
+                <span class="look-num">03</span>
+                <div class="look-shade"></div>
+                <div class="look-body"><span class="kicker">Shirts · Trousers</span><h3>Office Essentials</h3><p>The 9-to-9 uniform — 15 looks</p></div>
+            </a>
+            <a class="look-card reveal reveal-d3" href="collection.html?cat=accessories">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=800&auto=format&fit=crop" alt="The Details" loading="lazy">
+                <span class="look-num">04</span>
+                <div class="look-shade"></div>
+                <div class="look-body"><span class="kicker">Watches · Leather</span><h3>The Details</h3><p>Finishing touches — 12 looks</p></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+                    <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+                </a>
+                <p>Style that defines you. Premium menswear designed in Dhaka — tailored fits, honest fabrics, modern silhouettes.</p>
+                <div class="social-row" id="socialRow" style="display:none"></div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="collection.html?cat=formal">Formal Wear</a></li>
+                    <li><a href="collection.html?cat=casual">Casual Wear</a></li>
+                    <li><a href="collection.html?cat=accessories">Accessories</a></li>
+                    <li><a href="collection.html">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>House</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="catalogues.html">Lookbook</a></li>
+                    <li><a href="videos.html">Films</a></li>
+                    <li><a href="brands.html">Labels</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="track-order.html">Track Your Order</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Exchanges &amp; Returns</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Jovent Menswear. Dress sharp, live confident.</p>
+            <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="faq.html">FAQ</a></div>
+            <span class="pay-note">COD · bKash · Cards Accepted</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account — Jovent Menswear</title>
+    <meta name="description" content="Your Jovent account — orders, addresses, settings.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">Complimentary delivery on orders over ৳5,000 &nbsp;·&nbsp; Cash on Delivery across Bangladesh</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+            <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Shop</a>
+            <a href="catalogues.html">Lookbook</a>
+            <a href="videos.html">Films</a>
+            <a href="brands.html">Labels</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="hicon" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </button>
+            <a class="hicon" href="account.html?tab=wishlist" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.5 8 2.5 4.5 6 4.5c2 0 3.5 1.2 4.5 2.6 1-1.4 2.5-2.6 4.5-2.6 3.5 0 5.5 3.5 4 7.2C19.5 16.3 12 21 12 21z"/></svg>
+                <span class="cart-count" id="wishCount" style="display:none">0</span>
+            </a>
+            <a class="cart-link" href="cart.html" aria-label="Shopping bag">
+                <svg viewBox="0 0 24 24"><path d="M6 8h15l-1.5 12.5a1 1 0 0 1-1 .5H8.5a1 1 0 0 1-1-.5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                <span>Bag</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+                <a class="account-link" href="login.html" id="accountLink" aria-label="Account">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></svg>
+                    <span id="accountLabel">Login</span>
+                </a>
+        </div>
+    </div>
+</header>
+
+
+<section class="page-hero">
+    <div class="wrap reveal in">
+        <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <b>My Account</b></div>
+        <h1>My <em>Account</em></h1>
+        <p>Orders, addresses and settings — all in one place.</p>
+    </div>
+</section>
+
+<section>
+    <div class="wrap">
+        <div class="account-layout" id="accountPage">
+            <aside class="acc-nav">
+                <div class="acc-user">
+                    <div class="acc-avatar" id="accAvatar">J</div>
+                    <div><b id="accName">—</b><small id="accEmail">—</small></div>
+                </div>
+                <button class="acc-link active" data-acc="overview"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>Overview</button>
+                <button class="acc-link" data-acc="orders"><svg viewBox="0 0 24 24"><path d="M6 8h15l-1.5 12.5a1 1 0 0 1-1 .5H8.5a1 1 0 0 1-1-.5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>My Orders<span id="accOrderCount" style="margin-left:auto;color:var(--gold-soft)"></span></button>
+                <button class="acc-link" data-acc="addresses"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Addresses</button>
+                <button class="acc-link" data-acc="wishlist"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.5 8 2.5 4.5 6 4.5c2 0 3.5 1.2 4.5 2.6 1-1.4 2.5-2.6 4.5-2.6 3.5 0 5.5 3.5 4 7.2C19.5 16.3 12 21 12 21z"/></svg>Wishlist<span id="accWishCount" style="margin-left:auto;color:var(--gold-soft)"></span></button>
+                <button class="acc-link" data-acc="settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3"/></svg>Settings</button>
+                <button class="acc-link logout" id="accLogout"><svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>Logout</button>
+            </aside>
+            <div>
+                <div class="acc-panel on" id="panel-overview">
+                    <h2>Overview</h2><p class="sub">Your Jovent journey at a glance.</p>
+                    <div class="mini-stats" id="ovStats"></div>
+                    <h3 class="h-display" style="font-size:20px;margin-bottom:14px">Latest order</h3>
+                    <div id="ovRecent"></div>
+                </div>
+                <div class="acc-panel" id="panel-orders">
+                    <h2>My Orders</h2><p class="sub">Tap any order to see items and live tracking.</p>
+                    <div id="ordersList"></div>
+                </div>
+                <div class="acc-panel" id="panel-wishlist">
+                    <h2>Wishlist</h2><p class="sub">Saved pieces, ready when you are.</p>
+                    <div class="wish-grid" id="wishGrid"></div>
+                </div>
+                <div class="acc-panel" id="panel-addresses">
+                    <h2>Addresses</h2><p class="sub">Saved addresses pre-fill at checkout.</p>
+                    <div class="addr-grid" id="addrGrid"></div>
+                    <button class="btn btn-outline" id="addrToggle" style="margin-bottom:18px">+ Add New Address</button>
+                    <div id="addrForm" style="display:none;background:var(--card);border:1px solid var(--border-soft);border-radius:6px;padding:28px">
+                        <form id="addrFormEl" novalidate>
+                            <div class="field-grid">
+                                <div class="field"><label for="adLabel">Label</label><input id="adLabel" type="text" placeholder="Home / Office"></div>
+                                <div class="field"><label for="adPhone">Phone</label><input id="adPhone" type="tel" placeholder="01XXXXXXXXX"></div>
+                                <div class="field full"><label for="adAddr">Street Address</label><input id="adAddr" type="text" placeholder="House, Road, Area" required></div>
+                                <div class="field full"><label for="adCity">City</label><input id="adCity" type="text" placeholder="Dhaka" required></div>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="margin-top:16px">Save Address</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="acc-panel" id="panel-settings">
+                    <h2>Settings</h2><p class="sub">Keep your profile and password up to date.</p>
+                    <div class="contact-form-card" style="margin-bottom:20px">
+                        <h3 class="h-display" style="font-size:20px;margin-bottom:18px">Profile</h3>
+                        <form id="profileForm" novalidate>
+                            <div class="field-grid">
+                                <div class="field"><label for="pfName">Full Name</label><input id="pfName" type="text" required></div>
+                                <div class="field"><label for="pfPhone">Phone</label><input id="pfPhone" type="tel"></div>
+                                <div class="field full"><label for="pfEmail">Email</label><input id="pfEmail" type="email" disabled style="opacity:.55"></div>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="margin-top:16px">Save Changes</button>
+                        </form>
+                    </div>
+                    <div class="contact-form-card">
+                        <h3 class="h-display" style="font-size:20px;margin-bottom:18px">Change Password</h3>
+                        <form id="passForm" novalidate>
+                            <div class="field-grid">
+                                <div class="field full"><label for="pwCur">Current Password</label><input id="pwCur" type="password" required></div>
+                                <div class="field"><label for="pwNew">New Password</label><input id="pwNew" type="password" required></div>
+                                <div class="field"><label for="pwNew2">Confirm New</label><input id="pwNew2" type="password" required></div>
+                            </div>
+                            <button type="submit" class="btn btn-outline" style="margin-top:16px">Update Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+                    <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+                </a>
+                <p>Style that defines you. Premium menswear designed in Dhaka — tailored fits, honest fabrics, modern silhouettes.</p>
+                <div class="social-row" id="socialRow" style="display:none"></div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="collection.html?cat=formal">Formal Wear</a></li>
+                    <li><a href="collection.html?cat=casual">Casual Wear</a></li>
+                    <li><a href="collection.html?cat=accessories">Accessories</a></li>
+                    <li><a href="collection.html">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>House</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="catalogues.html">Lookbook</a></li>
+                    <li><a href="videos.html">Films</a></li>
+                    <li><a href="brands.html">Labels</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="track-order.html">Track Your Order</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Exchanges &amp; Returns</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Jovent Menswear. Dress sharp, live confident.</p>
+            <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="faq.html">FAQ</a></div>
+            <span class="pay-note">COD · bKash · Cards Accepted</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

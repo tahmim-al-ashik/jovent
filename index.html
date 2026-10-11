@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovent Menswear — Style That Defines You</title>
+    <meta name="description" content="Jovent Menswear — premium formal wear, casual wear and accessories for the modern gentleman. Dress sharp, live confident.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="announce">Complimentary delivery on orders over ৳5,000 &nbsp;·&nbsp; Cash on Delivery across Bangladesh</div>
+
+<header class="site-header" id="siteHeader">
+    <div class="header-inner">
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+            <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="collection.html">Shop</a>
+            <a href="catalogues.html">Lookbook</a>
+            <a href="videos.html">Films</a>
+            <a href="brands.html">Labels</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="hicon" id="searchBtn" aria-label="Search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </button>
+            <a class="hicon" href="account.html?tab=wishlist" aria-label="Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.5 8 2.5 4.5 6 4.5c2 0 3.5 1.2 4.5 2.6 1-1.4 2.5-2.6 4.5-2.6 3.5 0 5.5 3.5 4 7.2C19.5 16.3 12 21 12 21z"/></svg>
+                <span class="cart-count" id="wishCount" style="display:none">0</span>
+            </a>
+            <a class="cart-link" href="cart.html" aria-label="Shopping bag">
+                <svg viewBox="0 0 24 24"><path d="M6 8h15l-1.5 12.5a1 1 0 0 1-1 .5H8.5a1 1 0 0 1-1-.5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                <span>Bag</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+                <a class="account-link" href="login.html" id="accountLink" aria-label="Account">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></svg>
+                    <span id="accountLabel">Login</span>
+                </a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="heroSlider">
+    <div class="hero-slide active">
+        <div class="hero-bg" style="background-image:url('assets/img/brand-banner.jpg')"></div>
+        <div class="hero-content"><div class="wrap">
+            <span class="kicker">Jovent Menswear — New Season</span>
+            <h1>Style That <em>Defines You</em></h1>
+            <p>Dress sharp. Live confident. Tailoring, casuals and accessories crafted for the modern gentleman.</p>
+            <div class="hero-cta">
+                <a href="collection.html?cat=formal" class="btn btn-gold">Shop Formal Wear</a>
+                <a href="catalogues.html" class="btn btn-outline">Explore Lookbook</a>
+            </div>
+        </div></div>
+    </div>
+    <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2000&auto=format&fit=crop')"></div>
+        <div class="hero-content"><div class="wrap">
+            <span class="kicker">The Wedding Edit ’26</span>
+            <h1>Tailored for Your <em>Biggest Moments</em></h1>
+            <p>Half-canvassed suits, crisp shirts and finishing details — built for the days everyone remembers.</p>
+            <div class="hero-cta">
+                <a href="collection.html?cat=formal" class="btn btn-gold">Shop the Edit</a>
+            </div>
+        </div></div>
+    </div>
+    <div class="hero-slide">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=2000&auto=format&fit=crop')"></div>
+        <div class="hero-content"><div class="wrap">
+            <span class="kicker">New Season Casuals</span>
+            <h1>Effortless, <em>Every Day</em></h1>
+            <p>Heavyweight tees, rugged jackets and clean sneakers — everyday luxury without the effort.</p>
+            <div class="hero-cta">
+                <a href="collection.html?cat=casual" class="btn btn-gold">Shop Casuals</a>
+            </div>
+        </div></div>
+    </div>
+    <div class="hero-ui"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;width:100%">
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-arrows">
+            <button class="hero-arrow" id="heroPrev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <button class="hero-arrow" id="heroNext" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+        </div>
+    </div></div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+    <div class="values-grid">
+        <div class="value-item reveal">
+            <svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20M12 22L8 9l4-6 4 6"/></svg>
+            <div><h4>Premium Quality</h4><p>Honest fabrics, built to last</p></div>
+        </div>
+        <div class="value-item reveal reveal-d1">
+            <svg viewBox="0 0 24 24"><path d="M4 20V10a8 8 0 0 1 16 0v10"/><path d="M2 20h20M9 20v-6h6v6"/></svg>
+            <div><h4>Modern Styles</h4><p>Silhouettes cut for today</p></div>
+        </div>
+        <div class="value-item reveal reveal-d2">
+            <svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M20 12a2 2 0 0 0-2-2H4v8h14a2 2 0 0 0 2-2z"/><circle cx="16.5" cy="14.5" r="1"/></svg>
+            <div><h4>Affordable Luxury</h4><p>Designer finish, honest prices</p></div>
+        </div>
+        <div class="value-item reveal reveal-d3">
+            <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+            <div><h4>Trusted Service</h4><p>7-day easy exchange promise</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="cats">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="kicker">The Wardrobe</span>
+            <h2>Shop by <em>Category</em></h2>
+            <div class="gold-rule"></div>
+        </div>
+        <div class="cat-grid">
+            <a class="cat-tile reveal" href="collection.html?cat=formal">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=900&auto=format&fit=crop" alt="Formal Wear" loading="lazy">
+                <div class="cat-label"><span class="kicker">Suits · Shirts · Blazers</span><h3>Formal Wear</h3><span class="link">Explore <i>→</i></span></div>
+            </a>
+            <a class="cat-tile reveal reveal-d1" href="collection.html?cat=casual">
+                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=900&auto=format&fit=crop" alt="Casual Wear" loading="lazy">
+                <div class="cat-label"><span class="kicker">Tees · Jackets · Denim</span><h3>Casual Wear</h3><span class="link">Explore <i>→</i></span></div>
+            </a>
+            <a class="cat-tile reveal reveal-d2" href="collection.html?cat=accessories">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=900&auto=format&fit=crop" alt="Accessories" loading="lazy">
+                <div class="cat-label"><span class="kicker">Watches · Leather · Footwear</span><h3>Accessories</h3><span class="link">Explore <i>→</i></span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="showcase">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="kicker">Just Landed</span>
+            <h2>New <em>Arrivals</em></h2>
+            <p>Fresh tailoring and essentials, cut for the season.</p>
+            <div class="gold-rule"></div>
+        </div>
+        <div class="product-grid" id="homeGrid"></div>
+        <div style="text-align:center;margin-top:54px" class="reveal">
+            <a href="collection.html" class="btn btn-outline">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="editorial">
+    <div class="ed-bg" style="background-image:url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=2000&auto=format&fit=crop')"></div>
+    <div class="ed-inner reveal">
+        <span class="kicker">The Jovent Standard</span>
+        <h2>Dress Sharp.<br><em>Live Confident.</em></h2>
+        <p>Every piece is cut, stitched and finished to earn its place in your wardrobe — season after season.</p>
+        <a href="catalogues.html" class="btn btn-gold">View the Lookbook</a>
+    </div>
+</section>
+
+<!-- SPLIT FEATURE -->
+<section>
+    <div class="wrap">
+        <div class="split">
+            <div class="split-img reveal">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1000&auto=format&fit=crop" alt="Jovent craftsmanship" loading="lazy">
+            </div>
+            <div class="split-text reveal reveal-d1">
+                <span class="kicker">Why Jovent</span>
+                <h2>Luxury You Can Feel,<br><em>Prices You Can Trust.</em></h2>
+                <p>We obsess over the details most brands skip — because confidence is built long before you leave the house.</p>
+                <ul class="check-list">
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Premium, honestly-sourced fabrics in every stitch</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Tailored fits refined on real bodies, not mannequins</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Direct-to-you pricing — no middlemen, no markup games</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Designed in Dhaka, delivered across Bangladesh</li>
+                </ul>
+                <a href="about.html" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="marquee-track">
+    <span>Formal Wear <i>◆</i></span><span>Casual Wear <i>◆</i></span><span>Accessories <i>◆</i></span><span>New Season ’26 <i>◆</i></span>
+    <span>Formal Wear <i>◆</i></span><span>Casual Wear <i>◆</i></span><span>Accessories <i>◆</i></span><span>New Season ’26 <i>◆</i></span>
+</div></div>
+
+<!-- TESTIMONIALS -->
+<section class="testis">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="kicker">Worn &amp; Trusted</span>
+            <h2>Gentlemen <em>Approve</em></h2>
+            <div class="gold-rule"></div>
+        </div>
+        <div class="testi-grid">
+            <div class="testi reveal">
+                <div class="stars">★★★★★</div>
+                <p>“The Regal suit fits better than tailors I’ve paid triple for. The fabric, the finish — unreal for the price.”</p>
+                <h5>Tanvir Ahmed</h5><small>Dhaka · Verified Buyer</small>
+            </div>
+            <div class="testi reveal reveal-d1">
+                <div class="stars">★★★★★</div>
+                <p>“Ordered Tuesday, wearing it Friday. The field jacket is now my everyday armour — quality is top tier.”</p>
+                <h5>Rafid Hasan</h5><small>Chattogram · Verified Buyer</small>
+            </div>
+            <div class="testi reveal reveal-d2">
+                <div class="stars">★★★★★</div>
+                <p>“Finally a local brand that understands fit. The dress shirt needed zero alterations. I’m a customer for life.”</p>
+                <h5>Nabil Chowdhury</h5><small>Sylhet · Verified Buyer</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="wrap reveal">
+        <span class="kicker">The Inner Circle</span>
+        <h2>First Access to Every Drop</h2>
+        <p>Join 5,000+ gentlemen. Early access, private offers, zero spam.</p>
+        <form class="nl-form" id="nlForm">
+            <input type="email" placeholder="Your email address" required aria-label="Email">
+            <button type="submit">Join</button>
+        </form>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="assets/img/logo-mark.png" alt="Jovent monogram">
+                    <span class="brand-word">JOVENT<small>MENSWEAR</small></span>
+                </a>
+                <p>Style that defines you. Premium menswear designed in Dhaka — tailored fits, honest fabrics, modern silhouettes.</p>
+                <div class="social-row" id="socialRow" style="display:none"></div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="collection.html?cat=formal">Formal Wear</a></li>
+                    <li><a href="collection.html?cat=casual">Casual Wear</a></li>
+                    <li><a href="collection.html?cat=accessories">Accessories</a></li>
+                    <li><a href="collection.html">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>House</h4>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="catalogues.html">Lookbook</a></li>
+                    <li><a href="videos.html">Films</a></li>
+                    <li><a href="brands.html">Labels</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="track-order.html">Track Your Order</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shipping.html">Shipping Info</a></li>
+                    <li><a href="returns.html">Exchanges &amp; Returns</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Jovent Menswear. Dress sharp, live confident.</p>
+            <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="faq.html">FAQ</a></div>
+            <span class="pay-note">COD · bKash · Cards Accepted</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
